@@ -1,0 +1,17 @@
+Para conectar los templates con los views y path:
+1.- Creamos una carpeta dentro de my-site al mismo nivel que dirst_app llamado templates
+2.- Dentro de templates creamos otra llamada first_app
+3.- Dentro de ella, creamos un template (example.html)
+
+En settings de my-site:
+1.- importamos os
+2.- en DIR[] 'DIRS': [os.path.join(BASE_DIR,'templates')],
+
+En views.py de first_app:
+1.- def simple_view(request):
+    return render(request, 'first_app/example.html')
+
+En urls.py:
+urlpatterns = [
+    path('', views.simple_view) # domain.com/first_app
+ ] 

@@ -1,0 +1,5 @@
+Lo importante en esta leccion es ver como incorporamos parámetros y argumentos
+tanto en las funciones def de los views de las aplicaciones como en la llamada
+a los path con <sldkfj>
+Además hemos utilizado un diccionario para poder pedir una página con un topic, 
+y que nos devuelva el contenido con esa Key del diccionario.

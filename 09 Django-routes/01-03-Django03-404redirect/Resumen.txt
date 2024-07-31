@@ -1,0 +1,15 @@
+Vamos a ver como devolver una página de error si no encuentra la Key en el diccionario
+1.- Utilizamos un try-except
+2.- Hay que importar y utilizar HttpResponseNotFound
+
+Otra forma de elevar un mensaje de error es con 
+raise Http404("404 GENERIC ERROR") --> importarlo
+En la configuracion de Django hay que cambiar el debug a false
+si no, aparecerá la plantilla de Django.
+Para ello --> vamos a settings.py de my_site y cambiamos
+- DEBUG = False
+- Añadir a HOSTALLOWED: "127.0.0.1"
+
+Es decir:
+en desarrollo --> utilizar HttpResponseNotFound con DEBUG True
+en producción --> utilizar Http404 + custom 404.html con DEBUG False y añadir dominios autorizados

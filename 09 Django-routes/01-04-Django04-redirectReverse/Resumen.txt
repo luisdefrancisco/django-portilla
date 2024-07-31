@@ -1,0 +1,2 @@
+#Reverse url sirve para dar nombre a determinados path y que sea mas facil 
+hacer referencia posteriormente a todo
